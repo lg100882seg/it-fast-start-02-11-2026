@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms-Homework 5</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section>
+        <form>
+          <div class="conteiner">
+            <h1>Homework#5</h1>
+            <form>
+              <fieldset>
+                <legend>Заповніть ваші данні</legend>
+                <p>
+                  <label for="First name">Ваше ім'я</label>
+
+                  <input type="text" placeholder="Введіть своє ім'я" />
+                </p>
+                <p>
+                  <label for="Last name">Ваше призвище</label>
+
+                  <input type="text" placeholder="Введіть своє прізвище" />
+                </p>
+                <p>
+                  <label for="email">Електронна пошта</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="email"
+                    required
+                  />
+                </p>
+                <p>
+                  <label for="phone">Телефон</label>
+                  <input
+                    type="phone"
+                    name="phone"
+                    id="phone"
+                    placeholder="+380"
+                  />
+                </p>
+              </fieldset>
+              <hr />
+              <fieldset>
+                <legend>Дані про ваш курс</legend>
+                <p>
+                  <label for="course">Оберіть ваш курс</label>
+                  <select id="course" name="course">
+                    <option value="" disabled selected>Оберіть ваш курс</option>
+                    <option value="1">Front-end Basic</option>
+                    <option value="2">Front-end Pro</option>
+                    <option value="3">React JS</option>
+                    <option value="4">Node JS</option>
+                  </select>
+                </p>
+
+                Чи виконуєте ви домашнє завдання?<br />
+                <label
+                  ><input type="radio" name="homework" value="yes" /> Так,
+                  виконую</label
+                ><br />
+                <label
+                  ><input type="radio" name="homework" value="no" /> Ні, не
+                  встигаю</label
+                >
+
+                <p>
+                  Додаткова інформація:<br />
+                  <label
+                    ><input type="checkbox" name="extra" value="continue" />
+                    Буду продовжувати навчання</label
+                  ><br />
+                  <label
+                    ><input type="checkbox" name="extra" value="english" />
+                    Додатково вивчаю англійську мову</label
+                  >
+                </p>
+              </fieldset>
+
+              <br />
+              <fieldset>
+                <textarea
+                  name="comment"
+                  rows="3"
+                  style="width: 100%; box-sizing: border-box"
+                  placeholder="Comment"
+                ></textarea>
+              </fieldset>
+
+              <br />
+
+              <button type="submit">Зберегти відповідь</button>
+            </form>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
